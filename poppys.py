@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[1]:
-
-
 import http.server, time,requests,json,asyncio
 from botbuilder.schema import Activity, ActivityTypes, ChannelAccount, HeroCard, Attachment, CardImage, SigninCard, CardAction
 from botbuilder.schema import ActionTypes, ThumbnailCard
@@ -18,9 +12,6 @@ APP_ID=''
 APP_PASSWORD=''
 WELCOME = "Hi! My name is Poppys. May I know your name? (Eg: Mr(s).Amit)"
 wlc = "Thank you for taking your time out to chat with me, "
-
-
-# In[6]:
 
 
 class Bot(http.server.BaseHTTPRequestHandler):
@@ -399,9 +390,6 @@ class Bot(http.server.BaseHTTPRequestHandler):
                 self.__handle_message_activity(activity) #Handles rest of all the replies
         else:
             self.__unhandled_activity()
-
-
-# In[7]:
 
 
 try:
