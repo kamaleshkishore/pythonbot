@@ -1,0 +1,8 @@
+botbuilder-core==4.0.0a6
+botbuilder-schema==4.0.0a6
+botframework-connector==4.0.0a6
+http
+time
+requests
+json
+asyncio
